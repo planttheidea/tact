@@ -12,36 +12,6 @@
  * limitations under the License.
  *
 */
-/* core */
-/*
- * Variables
- */
-/*
- * set normal colors
- */
-/*
- * set grey hues
- */
-/*
- * body and text color
- */
-/*
- * font
- */
-/*
- * line height
- */
-/*
- * hr
- */
-/* modules */
-/*
- * Grid variables
- */
-/*
- * form
- */
-/* core */
 .no-select {
   -webkit-user-drag: none;
   -webkit-user-select: none;
@@ -99,7 +69,6 @@
   -moz-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
-/* form */
 .tact-form-inputs {
   display: inline-block;
   vertical-align: baseline;
@@ -124,8 +93,6 @@
   display: block;
   margin: 0.25em 0;
 }
-/* grid */
-/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -306,10 +273,6 @@ td,
 th {
   padding: 0;
 }
-/**
- * Set box-sizing to border-box, to allow graceful spacing,
- * set font to always inherit from parent
- */
 html,
 body {
   margin: 0;
@@ -354,22 +317,43 @@ hr {
   border: 0;
   border-top: 1px solid #b7bbbd;
 }
-/**
- * make images responsive
- */
 .tact-img {
   max-width: 100%;
   height: auto;
   display: block;
 }
-/*!
-Tact v0.1.0
-Copyright 2014 Plant The Idea Web Design. All rights reserved.
-Licensed under the MIT License.
-*/
-.tact-grid {
+.grid {
   display: block;
   width: 100%;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-rendering: normal;
+}
+.grid:before {
+  display: table;
+  content: ' ';
+}
+.grid:after {
+  display: table;
+  content: ' ';
+  clear: both;
+}
+.flex {
+  font-family: sans-serif;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  letter-spacing: -0.31em;
+  text-rendering: optimizespeed;
+}
+.flex .opera-only :-o-prefocus,
+.flex {
+  word-spacing: -0.43em;
+}
+.flex[class*="tact-p"],
+.flex[class*="tact-f"] {
+  font-family: sans-serif;
 }
 [class*="col-p-"],
 [class*="col-f-"],
@@ -793,38 +777,6 @@ Licensed under the MIT License.
 }
 .col-r-0 {
   width: 0;
-}
-.tact-flex {
-  font-family: sans-serif;
-  /* IE10 uses display: flexbox */
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
-  letter-spacing: -0.31em;
-  text-rendering: optimizespeed;
-}
-.tact .opera-only :-o-prefocus,
-.tact-flex {
-  word-spacing: -0.43em;
-}
-.tact-grid {
-  letter-spacing: normal;
-  word-spacing: normal;
-  text-rendering: normal;
-}
-.tact-grid:before {
-  display: table;
-  content: ' ';
-}
-.tact-grid:after {
-  display: table;
-  content: ' ';
-  clear: both;
-}
-.tact-flex[class*="tact-p"],
-.tact-flex[class*="tact-f"] {
-  font-family: sans-serif;
 }
 @media screen and (min-width: 0.063em) {
   [class*="col-xs-p-"],
@@ -2951,12 +2903,6 @@ Licensed under the MIT License.
     width: 0;
   }
 }
-/*!
-Pure v0.5.0
-Copyright 2014 Yahoo! Inc. All rights reserved.
-Licensed under the BSD License.
-https://github.com/yui/pure/blob/master/LICENSE.md
-*/
 fieldset {
   width: 100%;
 }
@@ -3145,7 +3091,7 @@ legend {
   margin: 0.25em 0;
 }
 .form-aligned {
-  /* Aligned Forms */
+
 }
 .form-aligned input,
 .form-aligned textarea,
@@ -3170,7 +3116,6 @@ legend {
 .form-aligned .controls {
   margin: 1.5em 0 0 10em;
 }
-/* Rounded Inputs */
 input.input-rounded,
 .input-rounded {
   -webkit-border-radius: 2em;
@@ -3181,7 +3126,6 @@ input.input-rounded,
   background-clip: padding-box;
   padding: 0.5em 1em;
 }
-/* Grouped Inputs */
 .form-group + * {
   margin-top: 0.75em;
 }
