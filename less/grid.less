@@ -1,0 +1,94 @@
+/*!
+Tact v0.1.0
+Copyright 2014 Plant The Idea Web Design. All rights reserved.
+Licensed under the MIT License.
+*/
+
+.grid {
+	& {
+		display:block;
+		width:100%;
+	}
+	
+	&:before,
+	&:after {
+		content:' ';
+		display:table;
+	}
+}
+
+[data-col] {
+	display:block;
+	float:left;
+	padding-left:@gutter;
+	padding-right:@gutter;
+}
+
+.p-float-class(100,all);
+.f-float-class-all(all);
+.gr-float-class(1,all,5,1);
+
+@media screen and (min-width:0.063em) {
+	[data-p-xs],
+	[data-f-xs],
+	[data-gr-xs] {
+		display:block;
+		float:left;
+	}
+
+	.p-float-class(100,xs);
+	.f-float-class-all(xs);
+	.gr-float-class(1,xs,5,1);
+}
+
+@media screen and (min-width:35.5em) {
+	[data-p-s],
+	[data-f-s],
+	[data-gr-s] {
+		display:block;
+		float:left;
+	}
+
+	.p-float-class(100,s);
+	.f-float-class-all(s);
+	.gr-float-class(1,s,5,1);
+}
+
+@media screen and (min-width:48em) {
+	[data-p-m],
+	[data-f-m],
+	[data-gr-m] {
+		display:block;
+		float:left;
+	}
+
+	.p-float-class(100,m);
+	.f-float-class-all(m);
+	.gr-float-class(1,m,5,1);
+}
+
+@media screen and (min-width:64em) {
+	[data-p-l],
+	[data-f-l],
+	[data-gr-l] {
+		display:block;
+		float:left;
+	}
+
+	.p-float-class(100,l);
+	.f-float-class-all(l);
+	.gr-float-class(1,l,5,1);
+}
+
+@media screen and (min-width:80em) {
+	[data-p-xl],
+	[data-f-xl],
+	[data-gr-xl] {
+		display:block;
+		float:left;
+	}
+
+	.p-float-class(100,xl);
+	.f-float-class-all(xl);
+	.gr-float-class(1,xl,5,1);
+}
