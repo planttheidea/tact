@@ -1,0 +1,276 @@
+button,
+input[type="button"],
+[role="button"] {
+	display:inline-block;
+	vertical-align:middle;
+	padding:(@gutter / 2) @gutter;
+	margin:0;
+	text-align:center;
+	white-space:nowrap;
+	cursor:pointer;
+	background-image:none;
+	background-color:@white;
+	color:@black;
+	border:0;
+	touch-action:manipulation;
+	.user-select(none);
+	.border-radius(@border-radius);
+	.shadow-extra-small();
+	.transition(@transition-button);
+}
+
+button.large,
+input[type="button"].large,
+[role="button"].large {
+	padding:(@gutter / 1.5) @gutter * 1.25;
+	font-size:(@font-size * 1.5);
+}
+
+button.small,
+input[type="button"].small,
+[role="button"].small {
+	padding:(@gutter / 3.25) @gutter * 0.75;
+	font-size:(@font-size * 0.75);
+}
+
+button:hover,
+input[type="button"]:hover,
+[role="button"]:hover {
+	.shadow-small();
+}
+
+button:active,
+input[type="button"]:active,
+[role="button"]:active,
+[role="button"] input[type="radio"]:checked + label,
+button:focus,
+input[type="button"]:focus,
+[role="button"]:focus {
+	outline:0;
+	.shadow-extra-small-inset();
+}
+
+button.primary,
+input[type="button"].primary,
+[role="button"].primary,
+label[role="button"].active {
+	background-color:@primary;
+	color:@white;
+}
+
+button.primary:hover,
+input[type="button"].primary:hover,
+[role="button"].primary:hover,
+button.primary:active,
+input[type="button"].primary:active,
+[role="button"].primary:active,
+button.primary:focus,
+input[type="button"].primary:focus,
+[role="button"].primary:focus {
+	background-color:darken(@primary,7.5%);
+}
+
+button.info,
+input[type="button"].info,
+[role="button"].info {
+	background-color:@info;
+	color:@white;
+}
+
+button.info:hover,
+input[type="button"].info:hover,
+[role="button"].info:hover,
+button.info:active,
+input[type="button"].info:active,
+[role="button"].info:active,
+button.info:focus,
+input[type="button"].info:focus,
+[role="button"].info:focus {
+	background-color:darken(@info,7.5%);
+}
+
+button.success,
+input[type="button"].success,
+[role="button"].success {
+	background-color:@success;
+	color:@white;
+}
+
+button.success:hover,
+input[type="button"].success:hover,
+[role="button"].success:hover,
+button.success:active,
+input[type="button"].success:active,
+[role="button"].success:active,
+button.success:focus,
+input[type="button"].success:focus,
+[role="button"].success:focus {
+	background-color:darken(@success,7.5%);
+}
+
+button.warning,
+input[type="button"].warning,
+[role="button"].warning {
+	background-color:@warning;
+	color:@black;
+}
+
+button.warning:hover,
+input[type="button"].warning:hover,
+[role="button"].warning:hover,
+button.warning:active,
+input[type="button"].warning:active,
+[role="button"].warning:active,
+button.warning:focus,
+input[type="button"].warning:focus,
+[role="button"].warning:focus {
+	background-color:darken(@warning,7.5%);
+}
+
+button.danger,
+input[type="button"].danger,
+[role="button"].danger {
+	background-color:@danger;
+	color:@white;
+}
+
+button.danger:hover,
+input[type="button"].danger:hover,
+[role="button"].danger:hover,
+button.danger:active,
+input[type="button"].danger:active,
+[role="button"].danger:active,
+button.danger:focus,
+input[type="button"].danger:focus,
+[role="button"].danger:focus {
+	background-color:darken(@danger,7.5%);
+}
+
+button.link,
+input[type="button"].link,
+[role="button"].link {
+	background-color:transparent;
+	color:@primary;
+	.box-shadow(none);
+}
+
+button.link:hover,
+input[type="button"].link:hover,
+[role="button"].link:hover,
+button.link:active,
+input[type="button"].link:active,
+[role="button"].link:active,
+button.link:focus,
+input[type="button"].link:focus,
+[role="button"].link:focus {
+	text-decoration:underline;
+	.box-shadow(none);
+}
+
+[data-button-group] {
+	display:inline-block;
+	vertical-align:middle;
+}
+
+[data-button-group] > button,
+[data-button-group] > input[type="button"],
+[data-button-group] > [role="button"],
+[data-button-group] [data-dropdown] {
+	float:left;
+}
+
+[data-button-group] > button:first-of-type:not(:last-of-type),
+[data-button-group] > button:first-child:not(:last-child),
+[data-button-group] > input[type="button"]:first-of-type:not(:last-of-type),
+[data-button-group] > input[type="button"]:first-child:not(:last-child),
+[data-button-group] > [role="button"]:first-of-type:not(:last-of-type),
+[data-button-group] > [role="button"]:first-child:not(:last-child),
+[data-button-group] [data-button-group]:first-of-type:not(:last-of-type) > [role="button"],
+[data-button-group] [data-button-group]:first-child:not(:last-child), > [role="button"],
+[data-button-group] [data-button-group]:first-of-type:not(:last-of-type) > button,
+[data-button-group] [data-button-group]:first-child:not(:last-child), > input[type="button"],
+[data-button-group] [data-button-group]:first-of-type:not(:last-of-type) > input[type="button"],
+[data-button-group] [data-button-group]:first-child:not(:last-child), > input[type="button"],
+[data-button-group] [data-dropdown]:first-of-type:not(:last-of-type) > button,
+[data-button-group] [data-dropdown]:first-child:not(:last-child) > button,
+[data-button-group] [data-dropdown]:first-of-type:not(:last-of-type) > input[type="button"],
+[data-button-group] [data-dropdown]:first-child:not(:last-child) > input[type="button"],
+[data-button-group] [data-dropdown]:first-of-type:not(:last-of-type) > [role="button"],
+[data-button-group] [data-dropdown]:first-child:not(:last-child)s > [role="button"] {
+	.border-radius(@border-radius 0 0 @border-radius);
+}
+
+[data-button-group] > button:last-of-type:not(:first-of-type),
+[data-button-group] > button:last-child:not(:first-child),
+[data-button-group] > input[type="button"]:last-of-type:not(:first-of-type),
+[data-button-group] > input[type="button"]:last-child:not(:first-child),
+[data-button-group] > [role="button"]:last-of-type:not(:first-of-type),
+[data-button-group] > [role="button"]:last-child:not(:first-child),
+[data-button-group] [data-button-group]:last-of-type:not(:first-of-type) > [role="button"],
+[data-button-group] [data-button-group]:last-child:not(:first-child) > [role="button"],
+[data-button-group] [data-button-group]:last-of-type:not(:first-of-type) > button,
+[data-button-group] [data-button-group]:last-child:not(:first-child) > button,
+[data-button-group] [data-button-group]:last-of-type:not(:first-of-type) > input[type="button"],
+[data-button-group] [data-button-group]:last-child:not(:first-child) > input[type="button"],
+[data-button-group] [data-dropdown]:last-of-type:not(:first-of-type) > button,
+[data-button-group] [data-dropdown]:last-child:not(:first-child) > button,
+[data-button-group] [data-dropdown]:last-of-type:not(:first-of-type) > input[type="button"],
+[data-button-group] [data-dropdown]:last-child:not(:first-child) > input[type="button"],
+[data-button-group] [data-dropdown]:last-of-type:not(:first-of-type) > [role="button"],
+[data-button-group] [data-dropdown]:last-child:not(:first-child) > [role="button"] {
+	.border-radius(0 @border-radius @border-radius 0);
+}
+
+[data-button-group] > button:not(:first-of-type):not(:last-of-type),
+[data-button-group] > button:not(:first-child):not(:last-child),
+[data-button-group] > input[type="button"]:not(:first-of-type):not(:last-of-type),
+[data-button-group] > input[type="button"]:not(:first-child):not(:last-child),
+[data-button-group] > [role="button"]:not(:first-of-type):not(:last-of-type),
+[data-button-group] > [role="button"]:not(:first-child):not(:last-child),
+[data-button-group] [data-button-group]:not(:first-of-type):not(:last-of-type) > [role="button"],
+[data-button-group] [data-button-group]:not(:first-child):not(:last-child) > [role="button"],
+[data-button-group] [data-button-group]:not(:first-of-type):not(:last-of-type) > button,
+[data-button-group] [data-button-group]:not(:first-child):not(:last-child) > button,
+[data-button-group] [data-button-group]:not(:first-of-type):not(:last-of-type) > input[type="button"],
+[data-button-group] [data-button-group]:not(:first-child):not(:last-child) > input[type="button"],
+[data-button-group] [data-dropdown]:not(:first-child):not(:last-child) > button,
+[data-button-group] [data-dropdown]:not(:first-child):not(:last-child) > input[type="button"],
+[data-button-group] [data-dropdown]:not(:first-child):not(:last-child) > [role="button"] {
+	.border-radius(0);
+}
+
+[data-button-group="justified"] {
+	display:table;
+	width:100%;
+	border-collapse:separate;
+}
+[data-button-group="justified"] > button,
+[data-button-group="justified"] > input[type="button"],
+[data-button-group="justified"] > [role="button"],
+[data-button-group="justified"] > [data-button-group] {
+	display:table-cell;
+	float:none!important;
+}
+[data-button-group="justified"] > [data-button-group] button {
+	width: 100%;
+}
+[data-button-group="justified"] > [data-button-group] [data-dropdown] {
+	left: auto;
+}
+
+label[role="button"] input[type="radio"],
+label[role="button"] input[type="checkbox"]{
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	cursor:pointer;
+	.opacity(0.01);
+}
+
+label[role="button"] {
+	display:block;
+	cursor:pointer;
+}
