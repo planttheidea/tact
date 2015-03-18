@@ -74,6 +74,14 @@ form {
 				color:@black;
 				.translateY(0);
 			}
+			
+			&:active ~ label,
+			&:focus ~ label,
+			&.has-value ~ label {
+				font-size:0.9em;
+				color:@black;
+				.translateY(0);
+			}
 		}
 		
 		& input[type="checkbox"],
