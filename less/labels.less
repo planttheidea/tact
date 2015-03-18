@@ -1,0 +1,39 @@
+[data-label] {
+	display:inline;
+	vertical-align:baseline;
+	padding:5px 10px;
+	margin-left:2px;
+	margin-right:2px;
+	font-size:0.75em;
+	line-height:1;
+	font-family:@bold-font-family;
+	color:@white;
+	text-align:center;
+	white-space:nowrap;
+	.border-radius(@border-radius);
+}
+
+[data-label] {
+	background-color:@dark-grey;
+}
+
+[data-label].primary {
+	background-color:@primary;
+}
+
+[data-label].info {
+	background-color:@info;
+}
+
+[data-label].success {
+	background-color:@success;
+}
+
+[data-label].warning {
+	background-color:@warning;
+	color:@black;
+}
+
+[data-label].danger {
+	background-color:@danger;
+}
