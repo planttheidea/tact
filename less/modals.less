@@ -1,0 +1,60 @@
+[data-modal] {
+	padding:@gutter;
+	margin:@separating-margin-center;
+	overflow:hidden;
+	visibility:hidden;
+	.border-radius(@border-radius);
+	.shadow-large();
+	.opacity(0);
+	.transition(@transition-visibility-opacity);
+}
+
+[data-modal].active {
+	visibility:visible;
+	.opacity(1);
+}
+
+[data-modal] [data-header],
+[data-modal] [data-footer] {
+	display:block;
+	background-color:lighten(@light-grey,7.5%);
+	padding:(@gutter / 2) @gutter;
+}
+
+[data-modal] [data-header] {
+	margin:(@gutter * -1) (@gutter * -1) @gutter;
+}
+
+[data-modal] [data-footer] {
+	margin:@gutter (@gutter * -1) (@gutter * -1);
+}
+
+[data-modal] [data-header].primary,
+[data-modal] [data-footer].primary {
+	background-color:@primary;
+	color:@white;
+}
+
+[data-modal] [data-header].info,
+[data-modal] [data-footer].info {
+	background-color:@info;
+	color:@white;
+}
+
+[data-modal] [data-header].success,
+[data-modal] [data-footer].success {
+	background-color:@success;
+	color:@white;
+}
+
+[data-modal] [data-header].warning,
+[data-modal] [data-footer].warning {
+	background-color:@warning;
+	color:@black;
+}
+
+[data-modal] [data-header].danger,
+[data-modal] [data-footer].danger {
+	background-color:@danger;
+	color:@white;
+}
