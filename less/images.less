@@ -1,0 +1,49 @@
+[data-thumbnail]:not(img) {
+	display:block;
+	padding:4px;
+	line-height:@line-height;
+	background-color:@white;
+	border:1px solid @light-grey;
+	.border-radius(@border-radius);
+	.transition(@transition-all);
+}
+
+img[data-responsive],
+[data-thumbnail]:not(img) img {
+	display:block;
+	max-width:100%;
+	height:auto;
+}
+
+img[data-thumbnail] {
+	display:inline-block;
+	max-width:100%;
+	height:auto;
+	padding:4px;
+	line-height:@line-height;
+	background-color:@white;
+	border:1px solid @light-grey;
+	.border-radius(@border-radius);
+	.transition(@transition-all);
+}
+
+img[data-fill] {
+	position:absolute;
+	top:-50%;
+	left:-50%;
+	right:-50%;
+	bottom:-50%;
+	min-height:100%;
+	min-width:100%;
+	height:auto;
+	width:auto;
+	margin:auto;
+}
+
+img[data-rounded] {
+	.border-radius(@border-radius);
+}
+
+img[data-circle] {
+	.border-radius(50%);
+}
