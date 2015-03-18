@@ -1,0 +1,30 @@
+[data-list-group] {
+	margin:@separating-margin;
+	padding:0;
+	list-style:none;
+	overflow:hidden;
+	.shadow-extra-small();
+	.border-radius(@border-radius);
+}
+
+[data-list-group] li a {
+	display:block;
+	padding:@gutter;
+	color:@black;
+	.transition(@transition-background-color-color);
+}
+
+[data-list-group] li a:hover {
+	text-decoration:none;
+	background-color:@light-grey;
+}
+
+[data-list-group] li:not(:first-of-type) a {
+	border-top:1px solid @light-grey;
+}
+
+[data-list-group] .active a,
+[data-list-group] .active a:hover {
+	background-color:@primary;
+	color:@white;
+}
