@@ -1,0 +1,22 @@
+[data-drawer] {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	background-color:@white;
+	z-index:10000;
+	padding:@gutter;
+	.translateX(-100%);
+	.transition(@transition-transform);
+	.shadow-large();
+}
+
+[data-drawer="right"] {
+	left:auto;
+	right:0;
+	.translateX(100%);
+}
+
+[data-drawer].open {
+	.translateX(0);
+}
