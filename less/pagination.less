@@ -1,0 +1,95 @@
+[data-pagination] {
+	margin:0;
+	padding:0;
+	list-style:none;
+	display:inline-block;
+	vertical-align:middle;
+}
+
+[data-pagination] li {
+	float:left;
+}
+
+[data-pagination] li a {
+	display:inline-block;
+	vertical-align:middle;
+	padding:(@gutter / 2) @gutter;
+	text-align:center;
+	white-space:nowrap;
+	background-color:@white;
+	color:@black;
+	border:0;
+	touch-action:manipulation;
+	.user-select(none);
+}
+
+[data-pagination] li:not([data-ellipse]) a {
+	.border-radius(@border-radius);
+	.shadow-extra-small();
+	.transition(@transition-background-color);
+}
+
+[data-pagination] li a:first-of-type:not(:last-of-type) {
+	.border-radius(@border-radius 0 0 @border-radius);
+}
+
+[data-pagination] li a:last-of-type:not(:first-of-type) {
+	.border-radius(0 @border-radius @border-radius 0);
+}
+
+[data-pagination] li a:not(:first-of-type):not(:last-of-type) {
+	.border-radius(0);
+}
+
+[data-pagination] li a:hover {
+	text-decoration:none;
+}
+
+[data-pagination] [data-ellipse] a:hover {
+	cursor:default;
+}
+
+[data-pagination] li:not([data-ellipse]) a:hover {
+	background-color:@light-grey;
+}
+
+[data-pagination] .active:not([data-ellipse]) a,
+[data-pagination] .active:not([data-ellipse]) a:hover,
+[data-pagination] li:not([data-ellipse]) a:active,
+[data-pagination] li:not([data-ellipse]) a:focus {
+	background-color:@primary;
+	color:@white;
+}
+
+[data-pagination] [data-prev]::before {
+	content:'\f053';
+	font-family:@icon-font-family;
+	display:inline-block;
+	margin-right:10px;
+}
+
+[data-pagination] [data-first]::before {
+	content:'\f053\f053';
+	font-family:@icon-font-family;
+	display:inline-block;
+	margin-right:10px;
+}
+
+[data-pagination] [data-next]::after {
+	content:'\f054';
+	font-family:@icon-font-family;
+	display:inline-block;
+	margin-left:10px;
+}
+
+[data-pagination] [data-last]::after {
+	content:'\f054\f054';
+	font-family:@icon-font-family;
+	display:inline-block;
+	margin-left:10px;
+}
+
+[data-pagination] [data-icon-only]::before,
+[data-pagination] [data-icon-only]::after {
+	margin:0;
+}
