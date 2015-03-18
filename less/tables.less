@@ -1,0 +1,89 @@
+table {
+	& {
+		width:100%;
+		max-width:100%;
+		background-color:transparent;
+		border-collapse:separate;
+	}
+
+	&[data-responsive] {
+		min-height:0.01%;
+		overflow-x:auto;
+	}
+
+	&.bordered {
+		border:1px solid @grey;
+	}
+
+	&.striped tbody tr:nth-of-type(odd) {
+		background-color:lighten(@light-grey,5%);
+	}
+	
+	&[data-hover-highlight] tbody tr:hover {
+		background-color:darken(@light-grey,5%);
+		color:@black;
+	}
+	
+	& tbody tr:first-of-type {
+		border-top:0;
+	}
+
+	& th,
+	& td {
+		padding:8px;
+		line-height:@line-height;
+	}
+
+	& td {
+		vertical-align:top;
+		border-top:2px solid @grey;
+	}
+
+	& th {
+		vertical-align:bottom;
+		border-top:0;
+		border-bottom:2px solid @grey;
+	}
+	
+	& thead th,
+	& tfoot td {
+		text-align:center;
+	}
+
+	&.condensed th,
+	&.condensed td {
+		padding:5px;
+	}
+	
+	& colgroup col.info,
+	& tr.info,
+	& th.info,
+	& td.info {
+		background-color:@info;
+		color:darken(@info,60%);
+	}
+	
+	& colgroup col.success,
+	& tr.success,
+	& th.success,
+	& td.success {
+		background-color:lighten(@success,65%);
+		color:darken(@success,10%);
+	}
+	
+	& colgroup col.warning,
+	& tr.warning,
+	& th.warning,
+	& td.warning {
+		background-color:lighten(@warning,25%);
+		color:darken(@warning,50%);
+	}
+	
+	& colgroup col.danger,
+	& tr.danger,
+	& th.danger,
+	& td.danger {
+		background-color:lighten(@danger,45%);
+		color:@danger;
+	}
+}
