@@ -1,0 +1,225 @@
+form {
+	& {
+		padding:@gutter;
+		background-color:lighten(@light-grey,7.5%);
+	}
+	
+	& legend {
+		font-size:1.2em;
+		font-family:@bold-font-family;
+	}
+	
+	& [data-control-group] {
+		&,
+		& .group-label {
+			margin:@separating-margin;
+		}
+	
+		& label {
+			font-size:0.9em;
+		}
+	
+		&.floating-label label,
+		& .group-label {
+			display:block;
+			width:100%;
+		}
+		
+		& .group-label {
+			font-size:1.2em;
+		}
+		
+		&.floating-label input[type=""],
+		&.floating-label input[type="date"],
+		&.floating-label input[type="datetime"],
+		&.floating-label input[type="datetime-local"],
+		&.floating-label input[type="email"],
+		&.floating-label input[type="number"],
+		&.floating-label input[type="tel"],
+		&.floating-label input[type="text"],
+		&.floating-label input[type="time"] {
+			margin-top:25px;
+		}
+		
+		&.floating-label label {
+			position:absolute;
+			top:0;
+			left:0;
+			font-size:1.2em;
+			color:@dark-grey;
+			cursor:text;
+			.translateY(32px);
+			.transition(@transition-all);
+		}
+		
+		&.floating-label:hover label,
+		&.floating-label input[type=""]:active ~ label,
+		&.floating-label input[type="date"]:active ~ label,
+		&.floating-label input[type="datetime"]:active ~ label,
+		&.floating-label input[type="datetime-local"]:active ~ label,
+		&.floating-label input[type="email"]:active ~ label,
+		&.floating-label input[type="number"]:active ~ label,
+		&.floating-label input[type="tel"]:active ~ label,
+		&.floating-label input[type="text"]:active ~ label,
+		&.floating-label input[type="time"]:active ~ label,
+		&.floating-label input[type=""]:focus ~ label,
+		&.floating-label input[type="date"]:focus ~ label,
+		&.floating-label input[type="datetime"]:focus ~ label,
+		&.floating-label input[type="datetime-local"]:focus ~ label,
+		&.floating-label input[type="email"]:focus ~ label,
+		&.floating-label input[type="number"]:focus ~ label,
+		&.floating-label input[type="tel"]:focus ~ label,
+		&.floating-label input[type="text"]:focus ~ label,
+		&.floating-label input[type="time"]:focus ~ label,
+		&.floating-label input[type=""].has-value ~ label,
+		&.floating-label input[type="date"].has-value ~ label,
+		&.floating-label input[type="datetime"].has-value ~ label,
+		&.floating-label input[type="datetime-local"].has-value ~ label,
+		&.floating-label input[type="email"].has-value ~ label,
+		&.floating-label input[type="number"].has-value ~ label,
+		&.floating-label input[type="tel"].has-value ~ label,
+		&.floating-label input[type="text"].has-value ~ label,
+		&.floating-label input[type="time"].has-value ~ label {
+			font-size:0.9em;
+			color:@black;
+			.translateY(0);
+		}
+		
+		& input[type="checkbox"],
+		& input[type="radio"] {
+			display:inline-block;
+			margin-left:5px;
+		}
+		
+		& input[type="checkbox"]:active,
+		& input[type="checkbox"]:focus,
+		& input[type="radio"]:active,
+		& input[type="radio"]:focus {
+			outline:0;
+		}
+	}
+	
+	&[data-input-group] {
+		& fieldset {
+			display:table;
+			vertical-align:middle;
+		}
+	
+		& label,
+		& input[type=""],
+		& input[type="date"],
+		& input[type="datetime"],
+		& input[type="datetime-local"],
+		& input[type="email"],
+		& input[type="number"],
+		& input[type="tel"],
+		& input[type="text"],
+		& input[type="time"],
+		button,
+		[role="button"] {
+			display:table-cell;
+			vertical-align:middle;
+			width:auto;
+		}
+		
+		& input[type=""],
+		& input[type="date"],
+		& input[type="datetime"],
+		& input[type="datetime-local"],
+		& input[type="email"],
+		& input[type="number"],
+		& input[type="tel"],
+		& input[type="text"],
+		& input[type="time"] {
+			padding-top:13px;
+			margin-top:0;
+		}
+	}
+		
+	& input[type=""],
+	& input[type="date"],
+	& input[type="datetime"],
+	& input[type="datetime-local"],
+	& input[type="email"],
+	& input[type="number"],
+	& input[type="tel"],
+	& input[type="text"],
+	& input[type="time"] {
+		width:100%;
+		padding:8px;
+		margin-top:5px;
+		border:0;
+		outline:0;
+		background-color:transparent;
+		.box-shadow(inset 0 -2px 0 @grey);
+		.border-radius(@border-radius @border-radius 0 0);
+		.transition(@transition-all);
+	}
+	
+	& input[type=""]:hover,
+	& input[type="date"]:hover,
+	& input[type="datetime"]:hover,
+	& input[type="datetime-local"]:hover,
+	& input[type="email"]:hover,
+	& input[type="number"]:hover,
+	& input[type="tel"]:hover,
+	& input[type="text"]:hover,
+	& input[type="time"]:hover,
+	& input[type=""]:active,
+	& input[type="date"]:active,
+	& input[type="datetime"]:active,
+	& input[type="datetime-local"]:active,
+	& input[type="email"]:active,
+	& input[type="number"]:active,
+	& input[type="tel"]:active,
+	& input[type="text"]:active,
+	& input[type="time"]:active,
+	& input[type=""]:focus,
+	& input[type="date"]:focus,
+	& input[type="datetime"]:focus,
+	& input[type="datetime-local"]:focus,
+	& input[type="email"]:focus,
+	& input[type="number"]:focus,
+	& input[type="tel"]:focus,
+	& input[type="text"]:focus,
+	& input[type="time"]:focus {
+		background-color:@white;
+	}
+	
+	& input[type=""]:active,
+	& input[type="date"]:active,
+	& input[type="datetime"]:active,
+	& input[type="datetime-local"]:active,
+	& input[type="email"]:active,
+	& input[type="number"]:active,
+	& input[type="tel"]:active,
+	& input[type="text"]:active,
+	& input[type="time"]:active,
+	& input[type=""]:focus,
+	& input[type="date"]:focus,
+	& input[type="datetime"]:focus,
+	& input[type="datetime-local"]:focus,
+	& input[type="email"]:focus,
+	& input[type="number"]:focus,
+	& input[type="tel"]:focus,
+	& input[type="text"]:focus,
+	& input[type="time"]:focus {
+		.box-shadow(inset 0 -3px 0 @primary);
+	}
+	
+	& ::-webkit-input-placeholder {
+		color:@grey;
+	}
+	
+	& :-moz-input-placeholder {
+		color:@grey;
+	}
+	
+	& ::-moz-input-placeholder {
+		color:@grey;
+	}
+	
+	& :-ms-input-placeholder {
+		color:@grey;
+	}
+}
