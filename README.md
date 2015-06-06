@@ -56,19 +56,19 @@ I won't bore you too much longer, but one more thing ... check this out:
               </a>
           </li>
           
-          <li data-submenu class="active">
+          <li data-submenu>
               <a href="#">
                   Menu item two
               </a>
               
               <ul data-menu-list>
-                <li class="active">
+                <li>
                     <a href="#">
                         Submenu item one
                     </a>
                 </li>
                 
-                <li class="active">
+                <li>
                     <a href="#">
                         Submenu item two
                     </a>
