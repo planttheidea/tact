@@ -1,0 +1,104 @@
+// containers
+.container {
+  &,
+  &-fixed {
+    width:100%;
+    padding-left:@gutter-lr;
+    padding-right:@gutter-lr;
+  }
+
+  &-fixed {
+    margin-left:auto;
+    margin-right:auto;
+  }
+}
+
+.pad {
+  &-left {
+    padding-left:@gutter-lr;
+  }
+
+  &-right {
+    padding-right:@gutter-lr;
+  }
+}
+
+// give margin-top to let elements breathe
+.flow {
+  & + & {
+    margin-top: @flow-size;
+  }
+}
+
+// eliminate top / bottom margins
+.flush {
+  & {
+    margin-top:0!important;
+    margin-bottom:0!important;
+  }
+
+  &-top {
+    margin-top:0!important;
+  }
+
+  &-bottom {
+    margin-bottom:0!important;
+  }
+}
+
+// text
+.text {
+  &-left {
+    text-align:left!important;
+  }
+
+  &-center {
+    text-align:center!important;
+  }
+
+  &-right {
+    text-align:right!important;
+  }
+
+  &-justify {
+    text-align:justify!important;
+  }
+
+  &-small {
+    font-size:@small-font-size;
+  }
+
+  &-large {
+    font-size:@large-font-size;
+  }
+
+  &-nowrap {
+    white-space:nowrap;
+  }
+
+  &-bold {
+    font-weight:700;
+  }
+
+  &-italic {
+    font-style:italic;
+  }
+
+  &-strikethrough {
+    text-decoration:line-through;
+  }
+}
+
+// lists
+.list {
+  &-inline {
+    display:inline-block;
+    vertical-align:top;
+  }
+
+  &-text {
+    list-style:none;
+    margin:0;
+    padding:0;
+  }
+}
