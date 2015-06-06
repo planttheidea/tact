@@ -1,0 +1,105 @@
+<div data-datepicker>
+    <div data-input-group>
+        <input
+                data-ng-class="{'invalid': !!form[name] && (!!form[name].$invalid && !!form[name].$dirty) || (!!form.$submitted && !!form[name].$invalid)}"
+                data-ng-model="model"
+                data-tact-datepicker-input="{{format}}"
+                required
+                type="text" >
+
+        <span class="addon-button datepicker-open-button">
+            <button type="button" data-ng-click="dtpckrCtrl.openDatepicker();">
+                <span class="fa fa-calendar">
+                    <span data-screen-reader-only>
+                        Open the calendar datepicker
+                    </span>
+                </span>
+            </button>
+        </span>
+    </div>
+
+    <div data-dropdown data-ng-class="{'open': !!isOpen}">
+        <div data-input-group class="flow">
+            <span class="addon-button">
+                <button type="button" data-ng-click="dtpckrCtrl.setDatepickerDisplay('Year',false);">
+                    <span class="fa fa-arrow-left">
+                        <span data-screen-reader-only>
+                            Go to previous year
+                        </span>
+                    </span>
+
+                    Y
+                </button>
+            </span>
+
+            <span class="addon-button">
+                <button type="button" data-ng-click="dtpckrCtrl.setDatepickerDisplay('Month',false);">
+                    <span class="fa fa-arrow-left">
+                        <span data-screen-reader-only>
+                            Go to previous month
+                        </span>
+                    </span>
+
+                    M
+                </button>
+            </span>
+
+            <h6 data-current-month class="text-center text-nowrap">
+                {{dtpckrCtrl.getDatepickerTitle()}}
+            </h6>
+
+            <span class="addon-button">
+                <button type="button" data-ng-click="dtpckrCtrl.setDatepickerDisplay('Month',true);">
+                    M
+
+                    <span class="fa fa-arrow-right">
+                        <span data-screen-reader-only>
+                            Go to next month
+                        </span>
+                    </span>
+                </button>
+            </span>
+
+            <span class="addon-button">
+                <button type="button" data-ng-click="dtpckrCtrl.setDatepickerDisplay('Year',true);">
+                    Y
+
+                    <span class="fa fa-arrow-right">
+                        <span data-screen-reader-only>
+                            Go to next year
+                        </span>
+                    </span>
+                </button>
+            </span>
+        </div>
+
+        <table data-table="fill" class="flow">
+            <thead>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr data-ng-repeat="week in weeks">
+                    <td data-ng-repeat="day in week track by $index">
+                        <button
+                                class="small"
+                                data-ng-class="{'secondary': !!day.today, 'primary': !!day.selected}"
+                                data-ng-click="dtpckrCtrl.setDate(day);"
+                                data-ng-if="!!day.date"
+                                type="button">
+                            {{day.text}}
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
