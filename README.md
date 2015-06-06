@@ -1,8 +1,8 @@
 # tact
 
-### CSS like a sir
+### CSS like a Sir
 
-So you've been using Bootstrap for a while, that's cool. Maybe you dig stuffing their markup full of non-semantic classes. Maybe you like having nonatuply-nested div soup to create a nested grid. Personally, I like my CSS to be dedicated to style, I want a semantic way to separate out how the data is organized from the padding I have on a container. I want my CSs to be simple, elegant. Tactful.
+So you've been using Bootstrap for a while, that's cool. Maybe you dig stuffing their markup full of non-semantic classes. Maybe you like having nonatuply-nested div soup to create a nested grid. Personally, I like my CSS to be dedicated to style, I want a semantic way to separate out how the data is organized from the padding I have on a container. I want my CSS to be simple, elegant. Tactful.
 
 ##### Enter Tact CSS
 
