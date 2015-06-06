@@ -86,6 +86,6 @@ I won't bore you too much longer, but one more thing ... check this out:
   </nav>
 </header>
 ```
-Yes, yes ... data attributes galore, but keep your eye on the prize! If you've worked with Bootstrap, this is **way** more concise (there is something like 12 classes used for this same setup), but wait ... what's that value on data-mobile-menu?. Tabs? ... Yes, there are multiple mobile menus. Right now there are two, with the default as the delicious hamburger, but if you want to use tabs (much better from a UX perspective) just add that value to the attribute. Also, the data-menu is by default vertical, so if you wanted to make it horizontal ... you got it, just set *data-menu="horizontal"*.
+Yes, yes ... data attributes galore, but keep your eye on the prize! If you've worked with Bootstrap, this is **way** more concise (there is something like 12 classes used for this same setup), but wait ... what's that value on data-mobile-menu?. Tabs? ... Yes, there are multiple mobile menus. Right now there are two, with the default as the delicious hamburger, but if you want to use tabs (much better from a UX perspective) just add that value to the attribute. Also, the menu bar is by default vertical, so if you wanted to make it horizontal ... you got it, just set *data-menu-bar="horizontal"*.
 
 This is just the beginning, both from a dev and documentation perspective. I'll be putting together a site down the road to show all of the elements involved and how they interact with one another. Stay tuned!
