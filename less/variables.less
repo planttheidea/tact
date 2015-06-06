@@ -1,2 +1,65 @@
-// core
-@import "variables/core.less";
+@color-primary:                 #ff6347;
+@color-secondary:               #30ba8f;
+@color-info:                    #1e90ff;
+@color-success:                 #009150;
+@color-warning:                 #fefe22;
+@color-danger:                  #e62020;
+
+@white:                         #fff;
+@lighter-gray:                  screen(@light-gray,#ddd);
+@light-gray:                    #dbd7d2;
+@gray:                          average(@light-gray,@dark-gray);
+@dark-gray:                     #696969;
+@darker-gray:                   multiply(@dark-gray,#ddd);
+@black:                         #171717;
+
+@gutter-tb:                     15px;
+@gutter-tb-full:                (@gutter-tb * 2);
+@gutter-lr:                     20px;
+@gutter-lr-full:                (@gutter-lr * 2);
+@flow-size:                     1.5em;
+
+@font-family:                   sans-serif;
+@font-color:                    @black;
+@font-size-default:             14px;
+@small-font-size:               0.8em;
+@large-font-size:               1.2em;
+
+@font-family:                   'Open Sans',sans-serif;
+@font-family-italic:            'Open Sans Italic',sans-serif;
+@font-family-bold:              'Open Sans Bold',sans-serif;
+@font-family-bold-italic:       'Open Sans Bold Italic',sans-serif;
+@font-family-light:             'Open Sans Light',sans-serif;
+@font-family-light-italic:      'Open Sans Light Italic',sans-serif;
+
+@link-color:                    @color-info;
+
+@sm-break:                      35.5em;
+@md-break:                      48em;
+@lg-break:                      64em;
+@xl-break:                      80em;
+
+@md-break-max:                  63.938em;
+@sm-break-max:                  47.938em;
+
+@default-border-radius:         4px;
+
+@h1-size:                       (@font-size-default * 2);
+@h1-size-sm:                    round(@font-size-default * 2.142857);
+@h1-size-md:                    round(@font-size-default * 2.357143);
+@h1-size-lg:                    round(@font-size-default * 2.571429);
+@h1-size-xl:                    round(@font-size-default * 2.857143);
+
+@heading-factor:                1.12;
+
+@menu-bg-color:                 @color-secondary;
+@menu-font-color:               @white;
+@menu-active-font-size:         1.3rem;
+@menu-item-spacing:             @gutter-tb (@gutter-lr - 2px) @gutter-tb @gutter-lr;
+@menu-horizontalitem-spacing:   @gutter-tb @gutter-lr (@gutter-tb - 2px);
+@menu-active-color:             @lighter-gray;
+
+@button-gutter-tb:              10px;
+@button-gutter-lr:              16px;
+
+@form-control-height:           34px;
