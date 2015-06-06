@@ -1,0 +1,12 @@
+<ul data-tabs class="{{listClass}}">
+    <li
+            class="{{tabClass}}"
+            data-ng-class="{'active': pane.selected, 'disabled': disabledTabs.indexOf(pane.title) !== -1}"
+            data-ng-repeat="pane in panes">
+        <a href data-ng-click="tbCtrl.selectPane(pane);">
+            {{pane.title}}
+        </a>
+    </li>
+</ul>
+
+<div data-tab-pane data-ng-transclude></div>
