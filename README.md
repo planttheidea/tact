@@ -55,6 +55,7 @@ I won't bore you too much longer, but one more thing ... check this out:
                   Menu item one
               </a>
           </li>
+          
           <li data-submenu class="active">
               <a href="#">
                   Menu item two
@@ -63,12 +64,13 @@ I won't bore you too much longer, but one more thing ... check this out:
               <ul data-menu-list>
                 <li class="active">
                     <a href="#">
-                        Menu item one
+                        Submenu item one
                     </a>
                 </li>
+                
                 <li class="active">
                     <a href="#">
-                        Menu item two
+                        Submenu item two
                     </a>
                 </li>
             </ul>
