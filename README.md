@@ -38,11 +38,11 @@ We know, its not too crazy different, but humor us and look at the markup. You'r
 ```
 <div data-grid>
   <div data-column-md="39%">
-    Half of one
+    This is practically
   </div>
   
   >div data-column-md="61%">
-    Half of another
+    The golden ratio
   </div>
 </div>
 ```
