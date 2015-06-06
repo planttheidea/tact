@@ -29,7 +29,7 @@ And now Tact:
     Half of one
   </div>
   
-  >div data-column-md="1/2">
+  <div data-column-md="1/2">
     Half of another
   </div>
 </div>
@@ -41,7 +41,7 @@ We know, its not too crazy different, but humor us and look at the markup. You'r
     This is practically
   </div>
   
-  >div data-column-md="61%">
+  <div data-column-md="61%">
     The golden ratio
   </div>
 </div>
