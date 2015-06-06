@@ -1,0 +1,22 @@
+[data-dropdown] {
+  & {
+    background-color:@white;
+    margin:0;
+    padding:0;
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    z-index:100;
+    .shadow-small();
+  }
+
+  &.open {
+    display:block;
+  }
+}
+
+[data-dropdown="right"] {
+  left:auto;
+  right:0;
+}
