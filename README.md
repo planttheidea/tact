@@ -38,7 +38,7 @@ And now Tact:
 </div>
 ```
 
-We know, its not too crazy different, but humor us and look at the markup. You're grid is established by *attributes*, which is kind of a big deal because it is *declarative*. Attributes have dedicated styling, and they are declaratively reflective of how the data is organized, so the code is far more readable (wouldn't you rather just see "1/2" instead of calculate 6 is half of 12?). By the way, the grid is especially powerful because you have all fractions (down to 1/24), but also all whole-number percentages from 1-100. We all know you secretly want to create a 37-19-24-20 grid, and we want to make it happen.
+We know, its not too crazy different, but humor us and look at the markup. You're grid is established by *attributes*, which is kind of a big deal because it is *declarative*. Attributes have dedicated styling, and they are declaratively reflective of how the data is organized, so the code is far more readable (wouldn't you rather just see "1/2" instead of calculate 6 is half of 12?) and there are some defaults which prevent the need for excess markup (hence the lack of need for the xs stacked styling). The grid is especially powerful because you have all fractions (down to 1/24), but also all whole-number percentages from 1-100. We all know you secretly want to create a 37-19-24-20 grid, and we want to make it happen.
 
 I won't bore you too much longer, but one more thing ... check this out:
 
