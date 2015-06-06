@@ -1,54 +1,54 @@
-// Core variables, mixins, and fonts
+/*!
+Tact CSS
+Copyright 2015 Plant The Idea Web Design All rights reserved.
+Licensed under the MIT License.
+https://github.com/planttheidea/tact/blob/master/LICENSE.md
+*/
+
+// mixins first
+@import "mixins/core.less";
+@import "mixins/lesshat.less";
+@import "mixins/grids.less";
+
+// variables
 @import "variables.less";
 
-// Mixins
-@import "mixins.less";
-
-// Viewport
-@import "viewport.less";
-
-// Grid
-@import "grid.less";
-
-// Fonts
-@import "font-awesome.less";
-@import "sinkin.less";
-@import "aleo.less";
-
-// Reset and dependencies
+// normalize to reset everything
 @import "normalize.less";
 
-// layout
+// helper classes
+@import "helper-classes.less";
+
+// core module
 @import "core.less";
+@import "core-responsive.less";
 
-// drawers
-@import "drawers.less";
+// grids
+@import "grid-core.less";
+@import "grid-responsive.less";
 
-// navigation
-@import "menu.less";
+//tabs
 @import "tabs.less";
+@import "pills.less";
 
-// alerts and labels
-@import "alerts.less";
-@import "labels.less";
+// menus
+@import "menus.less";
+@import "menus-responsive.less";
 
-// buttons and pagination
+// list groups
+@import "list-groups.less";
+
+// buttons
 @import "buttons.less";
-@import "pagination.less";
-
-// images
-@import "images.less";
-
-// tables
-@import "tables.less";
 
 // forms
 @import "forms.less";
 
-// panels and modals
-@import "panels.less";
-@import "modals.less";
+// tables
+@import "tables.less";
 
-// list groups and wells
-@import "list-groups.less";
-@import "wells.less";
+// dropdowns
+@import "dropdowns.less";
+
+// datepickers
+@import "datepickers.less";
