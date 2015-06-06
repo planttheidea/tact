@@ -106,4 +106,4 @@ Not very open-minded of you, but I'll play along ... there's nothing wrong with 
 
 This is just the beginning, both from a dev and documentation perspective. I'll be putting together a site down the road to show all of the elements involved and how they interact with one another. Stay tuned!
 
-Oh, one last thing ... beginning work on some basic UI components in AngularjS. They don't enhance the CSS by any means, but they provide the out-of-the-box functionality the CSS styles for (such as tabs, datepickers, etc). The only dependency for them other than AngularJS itself is momentJS if you are using the datepicker.
+Oh, one last thing ... beginning work on some basic UI components in AngularJS. They don't enhance the CSS by any means, but they provide the out-of-the-box functionality the CSS styles for (such as tabs, datepickers, etc). The only dependency for them other than AngularJS itself is momentJS if you are using the datepicker.
