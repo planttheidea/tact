@@ -28,7 +28,7 @@ And now Tact:
 
 ```
 <div data-grid>
-  >div data-column-md="1/2">
+  <div data-column-md="1/2">
     Half of one
   </div>
   
