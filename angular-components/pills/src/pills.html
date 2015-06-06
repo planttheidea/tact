@@ -1,0 +1,9 @@
+<ul data-pills class="{{listClass}}">
+    <li class="{{pillClass}}" data-ng-repeat="pane in panes" data-ng-class="{'active': pane.selected}">
+        <a href data-ng-click="plCtrl.selectPane(pane);">
+            {{pane.title}}
+        </a>
+    </li>
+</ul>
+
+<div data-pill-pane data-ng-transclude></div>
