@@ -89,15 +89,19 @@ I won't bore you too much longer, but one more thing ... check this out:
 Yes, yes ... data attributes galore, but keep your eye on the prize! If you've worked with Bootstrap, this is **way** more concise (there is something like 12 classes used for this same setup), but wait ... what's that value on data-mobile-menu?. Tabs? ... Yes, there are multiple mobile menus. Right now there are two, with the default as the delicious hamburger, but if you want to use tabs (much better from a UX perspective) just add that value to the attribute. Also, the menu bar is by default vertical, so if you wanted to make it horizontal ... you got it, just set *data-menu-bar="horizontal"*.
 
 **Is this legal? Using attributes for CSS?**
+
 Yup, and the use of data- as a prefix on everything makes it valid HTML as well. Don't go blabbing to the fuzz or anything, though.
 
 **What about specificity? I've never used attributes in CSS before.**
+
 Attributes have the exact same level of specificity as classes, so it's a one-to-one setup if you want to override the CSS with custom stuff.
 
 **What about performance? Aren't classes faster?**
+
 No arguments here, however attributes are not that much slower than classes, and the inheritance method used in Tact is less rigid than Bootstrap. One of the things that slows CSS down isn't the individual selector, its the dependency structure you set up (like using the direct-child selector >), so we tried to keep that in mind. Also, if you are building a site where everything else is optimized to the point that the CSS is the bottleneck ... you should develop for Tact. :)
 
 **This is weird, what's wrong with using classes? Everyone does it.**
+
 Not very open-minded of you, but I'll play along ... there's nothing wrong with it, its just not very semantic. This library was built for those that wanted human-readable, semantic HTML markup that is separated by concern. Plus ... why not?
 
 This is just the beginning, both from a dev and documentation perspective. I'll be putting together a site down the road to show all of the elements involved and how they interact with one another. Stay tuned!
