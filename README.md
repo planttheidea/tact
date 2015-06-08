@@ -100,6 +100,10 @@ Attributes have the exact same level of specificity as classes, so it's a one-to
 
 True, however attributes are really not that much slower than classes. Ben Frain did an <a href="http://benfrain.com/css-performance-revisited-selectors-bloat-expensive-styles/" target="_blank">excellent write-up in 2014 on the performance of different CSS selectors</a> with a massive DOM tree and determined the different between fastest and slowest was negligible (31ms was the largest difference).
 
+**What about JavaScript? Do I need to be aware of any gotchas?**
+
+Good question, and the answer is no ... if you actually mean JavaScript and not jQuery. If you use *el.setAttribute('data-menu-bar','horizontal');* then the changes will actually be reflected because the DOM element itself is changed. However, if you do something like *$(el).data('menu-bar','horizontal');*, this will **not** change anything on the screen. This is solely because of jQuery's implementation of *.data()*; it is an internal API, it does not make any DOM changes. If you wanted to actually change the DOM (and show styling changes), you would need to do something like *$(el).attr('data-menu-bar','horizontal');*, as that actually changes the element in the DOM.
+
 **This is weird, what's wrong with using classes? Everyone does it.**
 
 Not very open-minded of you, but I'll play along ... there's nothing wrong with it, its just not very semantic. This library was built for those that wanted human-readable, semantic HTML markup that is separated by concern. Plus ... why not?
