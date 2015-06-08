@@ -98,7 +98,9 @@ Attributes have the exact same level of specificity as classes, so it's a one-to
 
 **What about performance? Aren't classes faster?**
 
-No arguments here, however attributes are not that much slower than classes, and the inheritance method used in Tact is less rigid than Bootstrap. One of the things that slows CSS down isn't the individual selector, its the dependency structure you set up (like using the direct-child selector >), so we tried to keep that in mind. Also, if you are building a site where everything else is optimized to the point that the CSS is the bottleneck ... you should develop for Tact. :)
+True, however attributes are really not that much slower than classes. Ben Frain did an <a href="http://benfrain.com/css-performance-revisited-selectors-bloat-expensive-styles/" target="_blank">excellent write-up in 2014 on the performance of different CSS selectors</a> with a massive DOM tree and determined the different between fastest and slowest was negligible (31ms was the largest difference).
+
+Additionally, the inheritance method used in Tact is less rigid than Bootstrap. One of the things that slows CSS down isn't the individual selector, its the dependency structure you set up (like using the direct-child selector >), so we tried to keep that in mind. Also, if you are building a site where everything else is optimized to the point that the CSS is the bottleneck ... you should develop for Tact. :)
 
 **This is weird, what's wrong with using classes? Everyone does it.**
 
